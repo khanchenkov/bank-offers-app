@@ -4,7 +4,7 @@ const fs = require('fs');
 const cors = require('cors');
 
 const app = express();
-const PORT = process.env.port ?? 8000;
+const PORT = process.env.PORT ?? 8000;
 
 app.use(cors())
 app.use(express.static(path.join(__dirname, 'client/build')));
